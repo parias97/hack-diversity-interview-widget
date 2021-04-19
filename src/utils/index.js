@@ -9,8 +9,12 @@ export const createBeforeServerMessage = ({ message: { context, attributes, ...r
   // operating system, locale, etc.
   context: {
     ...context,
-    location: window.location.href,
     // please add a ton more info here
+    location: window.location.href,
+    geolocation: window.navigator.geolocation,
+    platform: window.navigator.platform,
+    browserLang: window.navigator.language,
+    prefferedLangs: window.navigator.languages,
   },
   // "attributes" is information that we want to keep track of. This data doesn't need to be
   // pristine at all. You can view it as another way to save arbitrary data for a message.

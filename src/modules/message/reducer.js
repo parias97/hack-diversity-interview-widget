@@ -16,8 +16,9 @@ const handleSendMessageSuccess = (state, action) => {
   if (!conversationMessages) {
     state.byConversationId[message.conversationId] = [message];
   } else {
-    state.byConversationId[message.conversationId] = [message, ...conversationMessages];
+    state.byConversationId[message.conversationId] = [...conversationMessages, message];
   }
+
   return state;
 };
 

@@ -6,7 +6,6 @@ const SIDEBAR_VIEWS = {
   CONVERSATION_LIST: 'CONVERSATION_LIST',
 }
 
-
 const defaultState = {
   selectedConversation: null,
   sidebarView: null,

@@ -16,3 +16,9 @@
   font-size: 14px;
   padding: 16px;
 }
+
+.drift-sidebar-single-conversation-timestamp {
+  display:flex;
+  font-weight: bold;
+  justify-content: center;
+}
